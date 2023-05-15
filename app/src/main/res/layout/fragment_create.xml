@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/reltitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="330dp"
+            android:src="@drawable/kobe"
+            android:layout_centerHorizontal="true"
+            android:layout_height="300dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="90dp"
+            android:id="@+id/add_photo"
+            android:layout_height="48dp"
+            android:fontFamily="@font/spartan_bold"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:text="Add Photo"
+            android:textAllCaps="false"
+            android:background="@drawable/addborder"
+            android:layout_below="@id/image"/>
+  <TextView
+      android:layout_marginStart="24dp"
+      android:layout_below="@id/add_photo"
+      android:id="@+id/title"
+      android:text="Event Title"
+      android:textSize="12sp"
+      android:fontFamily="@font/spartan_regular"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"/>
+        <EditText
+            android:layout_below="@id/title"
+            android:text="HHHHHHJJJ"
+            android:layout_marginHorizontal="15dp"
+            android:id="@+id/event_title"
+            android:layout_width="match_parent"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/spartan_bold"
+            android:paddingHorizontal="10dp"
+            android:paddingBottom="15dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/date"
+            android:layout_marginStart="24dp"
+            android:layout_below="@id/event_title"
+            android:text="Date"
+            android:fontFamily="@font/spartan_bold"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="20sp"/>
+
+        <TextView
+            android:id="@+id/times"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/spartan_bold"
+            android:layout_toRightOf="@id/date"
+            android:layout_marginStart="170dp"
+            android:layout_below="@id/event_title"
+            android:text="Time"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="20sp"/>
+
+        <EditText
+            android:id="@+id/event_date"
+            android:layout_below="@id/date"
+            android:focusable="false"
+            android:hint="Select Date"
+            android:layout_marginStart="24dp"
+            android:drawableBottom="@drawable/calendar"
+            android:layout_width="150dp"
+            android:layout_height="48dp"
+            android:fontFamily="@font/spartan_bold"
+            />
+
+        <EditText
+          android:id="@+id/event_time"
+            android:layout_toRightOf="@id/event_date"
+            android:layout_marginStart="104dp"
+            android:layout_below="@id/times"
+            android:hint="Select Time"
+            android:drawableBottom="@drawable/baseline_access_time_24"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:fontFamily="@font/spartan_bold"
+            android:focusable="false"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginHorizontal="17dp"
+        android:id="@+id/reltitles"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="24dp"
+        android:layout_below="@id/reltitle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location"
+            android:hint="Select Location"
+            android:focusable="false"
+            android:fontFamily="@font/spartan_bold"
+            android:textSize="14sp"/>
+        <EditText
+            android:layout_below="@id/location"
+            android:id="@+id/event_place"
+            android:layout_width="300dp"
+            android:text="Lokossa , Bénin"
+            android:layout_height="48dp"/>
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_marginTop="20dp"
+    android:layout_below="@id/reltitles"
+    android:layout_width="match_parent"
+    android:layout_marginHorizontal="17dp"
+    android:layout_height="450dp">
+    <TextView
+        android:id="@+id/about"
+        android:textSize="22sp"
+        android:text="About"
+        android:fontFamily="@font/spartan_bold"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/event_about"
+        android:layout_marginTop="12dp"
+        android:layout_below="@id/about"
+        android:textSize="18sp"
+        android:text="This perfomance may be by a single musician , sometimes such as an orchestra chair or brand."
+        android:fontFamily="@font/spartan_regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="350dp"
+        android:id="@+id/create_event"
+        android:layout_height="55dp"
+        android:fontFamily="@font/spartan_bold"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:text="Create Event"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/evborder"
+        android:layout_marginBottom="10dp"
+
+        />
+</RelativeLayout>
+</RelativeLayout>

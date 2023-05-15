@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="@color/grey"
+        android:layout_marginHorizontal="28dp"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="37dp"
+        android:layout_marginTop="15dp"
+        android:layout_height="110dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="10dp">
+
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="85dp"
+                android:layout_height="73dp"
+                android:src="@drawable/KO"
+                 />
+
+            <RelativeLayout
+                android:id="@+id/rel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_toRightOf="@id/img">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/spartan_bold"
+                    android:text="Drinking party"
+                    android:layout_marginBottom="8dp"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/line1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/name"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:src="@drawable/calendar" />
+
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/username"
+                        android:layout_marginStart="3dp"
+                        android:fontFamily="@font/spartan_bold"
+                        android:text="Today"
+                        android:textColor="@color/darkRed"
+                        android:textSize="12sp"
+                        android:layout_marginBottom="8dp"
+                        android:textStyle="italic" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line1"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:src="@drawable/location" />
+
+                    <TextView
+                        android:id="@+id/place"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/username"
+                        android:layout_marginStart="3dp"
+                        android:fontFamily="@font/spartan_bold"
+                        android:text="Los Angeles , California"
+                        android:textColor="@color/navbackground"
+                        android:textSize="12sp"
+                        android:textStyle="italic" />
+                </LinearLayout>
+
+            </RelativeLayout>
+<androidx.appcompat.widget.AppCompatButton
+    android:layout_width="wrap_content"
+   android:layout_marginTop="22dp"
+android:visibility="visible"
+    android:layout_marginStart="17dp"
+    android:layout_toRightOf="@id/rel"
+    android:text="Join"
+    android:textSize="13sp"
+    android:fontFamily="@font/spartan_bold"
+    android:background="@drawable/eborder"
+    android:textColor="@color/link_blue"
+    android:textAllCaps="false"
+    android:layout_height="28dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_marginTop="22dp"
+                android:visibility="gone"
+                android:layout_marginStart="17dp"
+                android:layout_toRightOf="@id/rel"
+                android:text="Joined"
+                android:textSize="13sp"
+                android:fontFamily="@font/spartan_bold"
+                android:background="@drawable/eborder"
+                android:textColor="@color/link_blue"
+                android:textAllCaps="false"
+                android:layout_height="28dp"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

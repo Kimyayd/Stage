@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "147681513493",
+    "project_id": "stage-73c75",
+    "storage_bucket": "stage-73c75.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:147681513493:android:945d290ccdb53fb5c9be1c",
+        "android_client_info": {
+          "package_name": "com.kimyayd.stage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "147681513493-s4k0uh1ik6bg4337i3j58147q3cv9it8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kimyayd.stage",
+            "certificate_hash": "05aa8bb6f16f7143f1dc26d03892fff1ba940257"
+          }
+        },
+        {
+          "client_id": "147681513493-p9bnkn46kjdmjbjtscqdakpt7ft2078q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYkvbLil0NnJp5JcTms6JUxmJQ1Jhzfys"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "147681513493-p9bnkn46kjdmjbjtscqdakpt7ft2078q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

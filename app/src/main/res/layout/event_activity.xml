@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout
+    android:id="@+id/rel1"
+    android:layout_width="wrap_content"
+    android:layout_height="400dp">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@drawable/kobe"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        android:textColor="@color/white"
+        android:layout_marginStart="15dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="65dp"
+        android:fontFamily="@font/spartan_bold"
+        android:layout_alignParentBottom="true"
+        android:text="Event name"
+        android:textAllCaps="false"/>
+</RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rel1"
+        android:layout_marginStart="15dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:src="@drawable/calendars" />
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/username"
+            android:layout_marginStart="3dp"
+            android:fontFamily="@font/spartan_bold"
+            android:text="Today"
+            android:textColor="@color/darkRed"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/line1"
+        android:id="@+id/line2"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:src="@drawable/locations" />
+        <TextView
+            android:id="@+id/place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/username"
+            android:layout_marginStart="3dp"
+            android:fontFamily="@font/spartan_bold"
+            android:text="Los Angeles , California"
+            android:textColor="@color/navbackground"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="350dp"
+        android:id="@+id/join_button"
+        android:layout_height="55dp"
+        android:fontFamily="@font/spartan_bold"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:text="Join the Event"
+        android:background="@drawable/eborder"
+        android:layout_below="@id/line2"/>
+    <RelativeLayout
+        android:id="@id/relll"
+        android:layout_below="@id/join_button"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginStart="19dp"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/spartan_bold"
+        android:textStyle="bold"
+        android:textSize="29sp"
+        android:id="@+id/about"
+        android:text="About"/>
+        <TextView
+            android:id="@+id/ful"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/about"
+            android:textSize="14dp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/spartan_bold"
+            android:text="eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/org"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ful"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:text="DFGHJFGHJFGHJFGBHNJHJVBN?BN"
+            android:textColor="@color/navbackground"
+            android:textSize="20dp"
+            android:textStyle="italic" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relll">
+
+    </RelativeLayout>
+</RelativeLayout>
